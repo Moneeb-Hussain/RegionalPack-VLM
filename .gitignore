@@ -1,0 +1,44 @@
+# Secrets
+.env
+.env.*
+*.pem
+credentials.json
+token.json
+hf_token
+.huggingface/
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+
+# Notebooks
+.ipynb_checkpoints/
+
+# Model weights and download caches
+*.safetensors
+*.bin
+*.pt
+*.pth
+*.gguf
+*.ckpt
+.cache/
+hf_cache/
+huggingface/
+models/
+
+# Local images, uploads, and built Colab bundles
+samples/
+data/raw/**
+!data/raw/.gitkeep
+results/uploads/*
+!results/uploads/.gitkeep
+dist/
+*.zip
+
+# OS
+.DS_Store

@@ -1,0 +1,15 @@
+# Install floor for the Phase 0 Colab notebook.
+# Colab already provides a CUDA build of torch and torchvision.
+# Do not add torch, torchvision, or flash-attn here: replacing them can
+# break the GPU runtime or add a dependency this phase does not need.
+#
+# Exact resolved versions are recorded by the notebook in
+# results/environment.json after a real run. They are not invented here.
+
+transformers>=4.57.0
+accelerate>=0.34.0
+# Pillow is intentionally absent. Colab has already loaded its _imaging
+# extension before this file is installed. The notebook pins the Python
+# package to that extension and adds PIL._typing._Ink if the package lacks it.
+pyyaml>=6.0.1
+huggingface_hub>=0.26.0

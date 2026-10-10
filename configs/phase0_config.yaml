@@ -1,0 +1,27 @@
+# Phase 0 smoke-test profile.
+# decoding_overrides must stay empty unless a smoke-test decoding change is intentional.
+# An empty override map means configs/inference_config.yaml is used unchanged.
+
+profile: phase0_smoke
+decoding_overrides: {}
+batch_size: 1
+attn_implementation: sdpa
+# Processor pixel budget for T4 smoke tests only. This is not a full-evaluation setting.
+# 1003520 pixels is about 980 visual tokens at patch 16 with merge size 2.
+min_pixels: 65536
+max_pixels: 1003520
+public_image_urls:
+  - https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen-VL/assets/demo.jpeg
+  - https://huggingface.co/datasets/huggingface/documentation-images/resolve/main/pipeline-cat-chonk.jpeg
+prompts:
+  - identification
+  - transcription
+  - category
+smoke_prompt:
+  id: smoke_describe
+  text: "Describe this image."
+  max_new_tokens: 128
+output_dir: results
+predictions_name: phase0_predictions.jsonl
+report_name: phase0_verification.md
+environment_name: environment.json

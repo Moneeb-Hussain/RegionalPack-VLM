@@ -1,0 +1,8 @@
+# Benchmark prompts. Identification and category stay the specification text.
+# Transcription is the front-of-pack wording fixed before data collection.
+# The Phase 0 wording is archived in prompts/phase0_prompts.yaml.
+# Do not tune these per image.
+
+identification: "What product is shown in this image? If you can identify the specific brand, name it. If you cannot identify the specific brand with confidence, say so explicitly rather than guessing."
+transcription: "Transcribe only the text on the front of the package exactly as written, including any text that is not in English. Include the brand wordmark, the product or flavor name, and any prominent tagline on the main face. Do not transcribe ingredient lists, nutrition tables, barcodes, or regulatory fine print. If no front-of-pack text is legible, say so."
+category: "What general category of product is this, for example beverage, snack, dairy, or cleaning product? Do not name a specific brand."

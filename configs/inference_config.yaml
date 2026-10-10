@@ -1,0 +1,25 @@
+# Locked full-evaluation inference settings.
+# Phase 0 smoke-test changes belong in configs/phase0_config.yaml.
+
+model_id: Qwen/Qwen3-VL-2B-Instruct
+# Recorded for the protocol. Phase 0 does not load this model.
+fallback_model_id: Qwen/Qwen2-VL-2B-Instruct
+# Hugging Face commit resolved from the public model repo on 2026-10-10.
+revision: "89644892e4d85e24eaac8bacfd4f463576704203"
+dtype: float16
+batch_size: 1
+minimum_transformers: "4.57.0"
+# The checkpoint generation_config.json sets temperature 0.7, top_p 0.8, and top_k 20.
+# top_k is set to null here so generate() disables that default and the locked
+# temperature and top_p are the sampling settings that actually run.
+decoding:
+  do_sample: true
+  temperature: 0.1
+  top_p: 1.0
+  top_k: null
+  repetition_penalty: 1.0
+  seed: 0
+max_new_tokens:
+  identification: 128
+  category: 128
+  transcription: 256
