@@ -6,6 +6,7 @@ A failed load stays a failed load. This module does not load a substitute model.
 
 from __future__ import annotations
 
+import re
 import tempfile
 from pathlib import Path
 from typing import Any
@@ -96,6 +97,41 @@ def apply_pixel_budget(processor, min_pixels: int, max_pixels: int) -> dict[str,
         "applied_min_pixels": int(min_pixels),
         "applied_max_pixels": int(max_pixels),
     }
+
+
+_SNAPSHOT_COMMIT = re.compile(r"snapshots/([0-9a-f]{40})/")
+
+
+def commit_from_snapshot_path(resolved: str | None) -> str | None:
+    """Return the commit named by a Hugging Face snapshot path."""
+    if not resolved:
+        return None
+    match = _SNAPSHOT_COMMIT.search(Path(resolved).as_posix())
+    if match is None:
+        return None
+    return match.group(1)
+
+
+def snapshot_commit(model_id: str, revision: str) -> str | None:
+    """Commit of the cached config.json for this revision.
+
+    Transformers 5 leaves ``config._commit_hash`` empty on Qwen3-VL. The
+    snapshot directory is still the commit that ``revision`` resolved to.
+    """
+    try:
+        from transformers.utils.hub import cached_file
+    except ImportError:
+        return None
+    try:
+        resolved = cached_file(
+            model_id,
+            "config.json",
+            revision=revision,
+            local_files_only=True,
+        )
+    except (OSError, ValueError, EnvironmentError):
+        return None
+    return commit_from_snapshot_path(resolved)
 
 
 def assess_loaded_revision(pinned: str, resolved: str | None) -> dict[str, Any]:
@@ -211,7 +247,15 @@ def load_qwen3_vl(
 
     memory = cuda_memory_bytes() or {}
     print("Scanning loaded parameters for non-finite values.")
-    revision_meta = assess_loaded_revision(revision, getattr(model.config, "_commit_hash", None))
+    config_commit = getattr(model.config, "_commit_hash", None)
+    resolved_commit = config_commit if isinstance(config_commit, str) and config_commit.strip() else None
+    if resolved_commit is None:
+        resolved_commit = snapshot_commit(model_id, revision)
+        notes.append(
+            "config._commit_hash was empty after from_pretrained. "
+            "The commit was read from the cached Hugging Face snapshot directory."
+        )
+    revision_meta = assess_loaded_revision(revision, resolved_commit)
     if revision_meta["revision_check"] != "match":
         raise ModelLoadError(
             "The loaded model snapshot does not match the pinned revision "

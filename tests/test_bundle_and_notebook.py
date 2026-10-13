@@ -33,6 +33,8 @@ def test_bundle_round_trip(tmp_path: Path):
     assert (extracted / "src" / "phase0.py").is_file()
     assert (extracted / "prompts" / "prompts.yaml").is_file()
     assert (extracted / "configs" / "inference_config.yaml").is_file()
+    assert (extracted / "configs" / "collection_config.yaml").is_file()
+    assert (extracted / "data" / "phase0_seen_products.csv").is_file()
 
 
 def test_extract_rejects_zip_slip(tmp_path: Path):

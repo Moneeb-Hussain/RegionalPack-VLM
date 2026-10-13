@@ -18,6 +18,12 @@ INCLUDED_FILES = (
     "prompts/phase0_prompts.yaml",
     "configs/inference_config.yaml",
     "configs/phase0_config.yaml",
+    "configs/eval_config.yaml",
+    "configs/brand_aliases.yaml",
+    "configs/collection_config.yaml",
+    "data/product_manifest.csv",
+    "data/annotations.csv",
+    "data/phase0_seen_products.csv",
     "results/README.md",
 )
 INCLUDED_DIRECTORIES = ("src",)

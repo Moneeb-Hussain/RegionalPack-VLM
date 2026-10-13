@@ -1,0 +1,22 @@
+# Full 60-image run. Decoding stays in configs/inference_config.yaml.
+# This pixel budget is the T4 budget from the completed Phase 0 run.
+# It was not chosen from benchmark outputs.
+
+profile: benchmark
+release: "0.1"
+release_label: "Version 0.1 preliminary pilot"
+# Frozen before any benchmark response. The 2026-10-11 deadline plan, 20 straight
+# photographs and a cola-only OCR list, is not this evaluation. No response was saved.
+# Model inputs are all 60 photographs. OCR uses every row with review_status verified.
+ocr_subset:
+  scope: all_verified
+  rule: "Character error rate is computed only where review_status is verified. A blank transcription is not proof that the script is absent. Draft rows are excluded. Fixed before any benchmark response."
+attn_implementation: sdpa
+min_pixels: 65536
+max_pixels: 1003520
+output_dir: results/benchmark
+predictions_name: benchmark_predictions.jsonl
+environment_name: benchmark_environment.json
+report_name: benchmark_run.md
+zip_name: benchmark_results.zip
+angles_note: "straight, tilt, and occluded are phone capture conditions. This is not a controlled 3D viewpoint experiment."

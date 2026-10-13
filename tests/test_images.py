@@ -39,6 +39,20 @@ class _Body:
         return False
 
 
+def test_exif_orientation_is_applied_in_memory_only(tmp_path: Path):
+    path = tmp_path / "turned.jpg"
+    image = Image.new("RGB", (40, 20), (200, 10, 10))
+    exif = image.getexif()
+    exif[274] = 6
+    image.save(path, format="JPEG", exif=exif)
+    original = path.read_bytes()
+    loaded = load_rgb_image(path)
+    assert loaded.size == (20, 40)
+    assert path.read_bytes() == original
+    with Image.open(path) as stored:
+        assert stored.size == (40, 20)
+
+
 def test_load_rgb_image_accepts_a_real_png(tmp_path: Path):
     path = tmp_path / "pack.png"
     path.write_bytes(_png_bytes())

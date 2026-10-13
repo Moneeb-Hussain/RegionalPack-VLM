@@ -3,7 +3,7 @@
 from __future__ import annotations
 
 from src.environment import classify_bf16_support
-from src.inference import assess_loaded_revision
+from src.inference import assess_loaded_revision, commit_from_snapshot_path
 
 PIN = "89644892e4d85e24eaac8bacfd4f463576704203"
 
@@ -38,3 +38,13 @@ def test_loaded_revision_must_equal_the_pin():
     missing = assess_loaded_revision(PIN, None)
     assert missing["revision_check"] == "missing"
     assert missing["revision_matches_pin"] is False
+
+
+def test_snapshot_path_yields_the_commit_directory():
+    path = (
+        "/root/.cache/huggingface/hub/models--Qwen--Qwen3-VL-2B-Instruct/"
+        f"snapshots/{PIN}/config.json"
+    )
+    assert commit_from_snapshot_path(path) == PIN
+    assert commit_from_snapshot_path(None) is None
+    assert commit_from_snapshot_path("/tmp/config.json") is None

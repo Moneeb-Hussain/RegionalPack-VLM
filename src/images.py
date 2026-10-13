@@ -10,7 +10,7 @@ import urllib.request
 from pathlib import Path
 from typing import Callable
 
-from PIL import Image, UnidentifiedImageError
+from PIL import Image, ImageOps, UnidentifiedImageError
 
 from src.errors import ImageValidationError
 
@@ -38,12 +38,13 @@ def load_rgb_image(path: Path) -> Image.Image:
             probe.verify()
         with Image.open(path) as opened:
             opened.load()
-            width, height = opened.size
+            image = ImageOps.exif_transpose(opened)
+            width, height = image.size
             if width < MIN_SIDE_PX or height < MIN_SIDE_PX:
                 raise ImageValidationError(
                     f"{path.name} is {width}x{height}. Both sides must be at least {MIN_SIDE_PX}px."
                 )
-            return opened.convert("RGB")
+            return image.convert("RGB")
     except ImageValidationError:
         raise
     except (UnidentifiedImageError, OSError, ValueError) as exc:
@@ -58,12 +59,13 @@ def image_from_bytes(payload: bytes, name: str) -> Image.Image:
     try:
         with Image.open(io.BytesIO(payload)) as opened:
             opened.load()
-            width, height = opened.size
+            image = ImageOps.exif_transpose(opened)
+            width, height = image.size
             if width < MIN_SIDE_PX or height < MIN_SIDE_PX:
                 raise ImageValidationError(
                     f"{name} is {width}x{height}. Both sides must be at least {MIN_SIDE_PX}px."
                 )
-            return opened.convert("RGB")
+            return image.convert("RGB")
     except ImageValidationError:
         raise
     except (UnidentifiedImageError, OSError, ValueError) as exc:
