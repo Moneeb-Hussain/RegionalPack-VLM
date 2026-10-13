@@ -1,0 +1,519 @@
+{
+  "n_predictions_expected": 180,
+  "n_images": 60,
+  "primary_products": 18,
+  "exploratory_products": [
+    "apple_fruita",
+    "apple_fruitien"
+  ],
+  "product_brand": {
+    "hits": 13,
+    "n": 18,
+    "label": "13/18 (72%)"
+  },
+  "product_category": {
+    "hits": 14,
+    "n": 18,
+    "label": "14/18 (78%)"
+  },
+  "image_brand": {
+    "hits": 42,
+    "n": 54,
+    "label": "42/54 (78%)"
+  },
+  "image_category": {
+    "hits": 43,
+    "n": 54,
+    "label": "43/54 (80%)"
+  },
+  "product_brand_wilson95": [
+    0.49126922453805477,
+    0.8750043085364452
+  ],
+  "product_category_wilson95": [
+    0.5478497354769452,
+    0.90999218086618
+  ],
+  "by_angle": {
+    "straight": {
+      "brand": "13/18 (72%)",
+      "brand_hits": 13,
+      "category": "14/18 (78%)",
+      "category_hits": 14,
+      "n": 18
+    },
+    "tilt": {
+      "brand": "15/18 (83%)",
+      "brand_hits": 15,
+      "category": "14/18 (78%)",
+      "category_hits": 14,
+      "n": 18
+    },
+    "occluded": {
+      "brand": "14/18 (78%)",
+      "brand_hits": 14,
+      "category": "15/18 (83%)",
+      "category_hits": 15,
+      "n": 18
+    }
+  },
+  "pairs": [
+    {
+      "category": "cola",
+      "international_brand": "correct",
+      "local_brand": "correct",
+      "international_category": "correct",
+      "local_category": "correct",
+      "international_id": "cola_intl",
+      "local_id": "cola_local"
+    },
+    {
+      "category": "biscuit",
+      "international_brand": "correct",
+      "local_brand": "incorrect",
+      "international_category": "correct",
+      "local_category": "correct",
+      "international_id": "biscuit_intl",
+      "local_id": "biscuit_local"
+    },
+    {
+      "category": "tea",
+      "international_brand": "correct",
+      "local_brand": "correct",
+      "international_category": "correct",
+      "local_category": "correct",
+      "international_id": "tea_intl",
+      "local_id": "tea_local"
+    },
+    {
+      "category": "chocolate",
+      "international_brand": "correct",
+      "local_brand": "incorrect",
+      "international_category": "correct",
+      "local_category": "correct",
+      "international_id": "chocolate_intl",
+      "local_id": "chocolate_local"
+    },
+    {
+      "category": "chips",
+      "international_brand": "correct",
+      "local_brand": "incorrect",
+      "international_category": "correct",
+      "local_category": "correct",
+      "international_id": "chips_intl",
+      "local_id": "chips_local"
+    },
+    {
+      "category": "detergent",
+      "international_brand": "correct",
+      "local_brand": "incorrect",
+      "international_category": "correct",
+      "local_category": "correct",
+      "international_id": "detergent_intl",
+      "local_id": "detergent_local"
+    },
+    {
+      "category": "toothpaste",
+      "international_brand": "correct",
+      "local_brand": "correct",
+      "international_category": "incorrect",
+      "local_category": "incorrect",
+      "international_id": "toothpaste_intl",
+      "local_id": "toothpaste_local"
+    },
+    {
+      "category": "noodles",
+      "international_brand": "correct",
+      "local_brand": "incorrect",
+      "international_category": "correct",
+      "local_category": "correct",
+      "international_id": "noodles_intl",
+      "local_id": "noodles_local"
+    },
+    {
+      "category": "soap",
+      "international_brand": "correct",
+      "local_brand": "correct",
+      "international_category": "incorrect",
+      "local_category": "incorrect",
+      "international_id": "soap_intl",
+      "local_id": "soap_local"
+    }
+  ],
+  "products": [
+    {
+      "product_id": "cola_intl",
+      "category": "cola",
+      "origin": "international",
+      "comparison_role": "primary",
+      "brand_true": "Coca-Cola",
+      "brand_hits": 3,
+      "brand": "correct",
+      "category_hits": 3,
+      "category_result": "correct",
+      "outcomes": {
+        "straight": "asserted_alias",
+        "tilt": "asserted_alias",
+        "occluded": "asserted_alias"
+      },
+      "pending": false
+    },
+    {
+      "product_id": "cola_local",
+      "category": "cola",
+      "origin": "local",
+      "comparison_role": "primary",
+      "brand_true": "Cola Next",
+      "brand_hits": 3,
+      "brand": "correct",
+      "category_hits": 3,
+      "category_result": "correct",
+      "outcomes": {
+        "straight": "asserted_alias",
+        "tilt": "asserted_alias",
+        "occluded": "asserted_alias"
+      },
+      "pending": false
+    },
+    {
+      "product_id": "biscuit_intl",
+      "category": "biscuit",
+      "origin": "international",
+      "comparison_role": "primary",
+      "brand_true": "Oreo",
+      "brand_hits": 3,
+      "brand": "correct",
+      "category_hits": 3,
+      "category_result": "correct",
+      "outcomes": {
+        "straight": "asserted_alias",
+        "tilt": "asserted_alias",
+        "occluded": "asserted_alias"
+      },
+      "pending": false
+    },
+    {
+      "product_id": "biscuit_local",
+      "category": "biscuit",
+      "origin": "local",
+      "comparison_role": "primary",
+      "brand_true": "Rite",
+      "brand_hits": 1,
+      "brand": "incorrect",
+      "category_hits": 3,
+      "category_result": "correct",
+      "outcomes": {
+        "straight": "punctuation_blocked_assertion",
+        "tilt": "asserted_alias",
+        "occluded": "punctuation_blocked_assertion"
+      },
+      "pending": true
+    },
+    {
+      "product_id": "tea_intl",
+      "category": "tea",
+      "origin": "international",
+      "comparison_role": "primary",
+      "brand_true": "Lipton",
+      "brand_hits": 3,
+      "brand": "correct",
+      "category_hits": 3,
+      "category_result": "correct",
+      "outcomes": {
+        "straight": "asserted_alias",
+        "tilt": "asserted_alias",
+        "occluded": "asserted_alias"
+      },
+      "pending": false
+    },
+    {
+      "product_id": "tea_local",
+      "category": "tea",
+      "origin": "local",
+      "comparison_role": "primary",
+      "brand_true": "Tapal",
+      "brand_hits": 3,
+      "brand": "correct",
+      "category_hits": 3,
+      "category_result": "correct",
+      "outcomes": {
+        "straight": "asserted_alias",
+        "tilt": "asserted_alias",
+        "occluded": "asserted_alias"
+      },
+      "pending": false
+    },
+    {
+      "product_id": "chocolate_intl",
+      "category": "chocolate",
+      "origin": "international",
+      "comparison_role": "primary",
+      "brand_true": "Cadbury",
+      "brand_hits": 3,
+      "brand": "correct",
+      "category_hits": 3,
+      "category_result": "correct",
+      "outcomes": {
+        "straight": "asserted_alias",
+        "tilt": "asserted_alias",
+        "occluded": "asserted_alias"
+      },
+      "pending": false
+    },
+    {
+      "product_id": "chocolate_local",
+      "category": "chocolate",
+      "origin": "local",
+      "comparison_role": "primary",
+      "brand_true": "YOU",
+      "brand_hits": 0,
+      "brand": "incorrect",
+      "category_hits": 3,
+      "category_result": "correct",
+      "outcomes": {
+        "straight": "abstention",
+        "tilt": "abstention",
+        "occluded": "abstention"
+      },
+      "pending": false
+    },
+    {
+      "product_id": "chips_intl",
+      "category": "chips",
+      "origin": "international",
+      "comparison_role": "primary",
+      "brand_true": "Lay's",
+      "brand_hits": 3,
+      "brand": "correct",
+      "category_hits": 3,
+      "category_result": "correct",
+      "outcomes": {
+        "straight": "asserted_alias",
+        "tilt": "asserted_alias",
+        "occluded": "asserted_alias"
+      },
+      "pending": false
+    },
+    {
+      "product_id": "chips_local",
+      "category": "chips",
+      "origin": "local",
+      "comparison_role": "primary",
+      "brand_true": "Super Crisp",
+      "brand_hits": 0,
+      "brand": "incorrect",
+      "category_hits": 3,
+      "category_result": "correct",
+      "outcomes": {
+        "straight": "abstention",
+        "tilt": "abstention",
+        "occluded": "abstention"
+      },
+      "pending": false
+    },
+    {
+      "product_id": "detergent_intl",
+      "category": "detergent",
+      "origin": "international",
+      "comparison_role": "primary",
+      "brand_true": "Surf Excel",
+      "brand_hits": 3,
+      "brand": "correct",
+      "category_hits": 3,
+      "category_result": "correct",
+      "outcomes": {
+        "straight": "asserted_alias",
+        "tilt": "asserted_alias",
+        "occluded": "asserted_alias"
+      },
+      "pending": false
+    },
+    {
+      "product_id": "detergent_local",
+      "category": "detergent",
+      "origin": "local",
+      "comparison_role": "primary",
+      "brand_true": "Bonus",
+      "brand_hits": 1,
+      "brand": "incorrect",
+      "category_hits": 3,
+      "category_result": "correct",
+      "outcomes": {
+        "straight": "punctuation_blocked_assertion",
+        "tilt": "asserted_alias",
+        "occluded": "punctuation_blocked_assertion"
+      },
+      "pending": true
+    },
+    {
+      "product_id": "toothpaste_intl",
+      "category": "toothpaste",
+      "origin": "international",
+      "comparison_role": "primary",
+      "brand_true": "Colgate",
+      "brand_hits": 3,
+      "brand": "correct",
+      "category_hits": 0,
+      "category_result": "incorrect",
+      "outcomes": {
+        "straight": "asserted_alias",
+        "tilt": "asserted_alias",
+        "occluded": "asserted_alias"
+      },
+      "pending": false
+    },
+    {
+      "product_id": "toothpaste_local",
+      "category": "toothpaste",
+      "origin": "local",
+      "comparison_role": "primary",
+      "brand_true": "Medicam",
+      "brand_hits": 3,
+      "brand": "correct",
+      "category_hits": 0,
+      "category_result": "incorrect",
+      "outcomes": {
+        "straight": "asserted_alias",
+        "tilt": "asserted_alias",
+        "occluded": "asserted_alias"
+      },
+      "pending": false
+    },
+    {
+      "product_id": "apple_fruita",
+      "category": "apple",
+      "origin": "exploratory",
+      "comparison_role": "exploratory",
+      "brand_true": "Fruita Vitals",
+      "brand_hits": 3,
+      "brand": "correct",
+      "category_hits": 3,
+      "category_result": "correct",
+      "outcomes": {
+        "straight": "asserted_alias",
+        "tilt": "asserted_alias",
+        "occluded": "asserted_alias"
+      },
+      "pending": false
+    },
+    {
+      "product_id": "apple_fruitien",
+      "category": "apple",
+      "origin": "exploratory",
+      "comparison_role": "exploratory",
+      "brand_true": "Fruitien",
+      "brand_hits": 3,
+      "brand": "correct",
+      "category_hits": 3,
+      "category_result": "correct",
+      "outcomes": {
+        "straight": "asserted_alias",
+        "tilt": "asserted_alias",
+        "occluded": "asserted_alias"
+      },
+      "pending": false
+    },
+    {
+      "product_id": "noodles_intl",
+      "category": "noodles",
+      "origin": "international",
+      "comparison_role": "primary",
+      "brand_true": "Knorr",
+      "brand_hits": 3,
+      "brand": "correct",
+      "category_hits": 3,
+      "category_result": "correct",
+      "outcomes": {
+        "straight": "asserted_alias",
+        "tilt": "asserted_alias",
+        "occluded": "asserted_alias"
+      },
+      "pending": false
+    },
+    {
+      "product_id": "noodles_local",
+      "category": "noodles",
+      "origin": "local",
+      "comparison_role": "primary",
+      "brand_true": "Shoop",
+      "brand_hits": 1,
+      "brand": "incorrect",
+      "category_hits": 3,
+      "category_result": "correct",
+      "outcomes": {
+        "straight": "punctuation_blocked_assertion",
+        "tilt": "punctuation_blocked_assertion",
+        "occluded": "asserted_alias"
+      },
+      "pending": true
+    },
+    {
+      "product_id": "soap_intl",
+      "category": "soap",
+      "origin": "international",
+      "comparison_role": "primary",
+      "brand_true": "Lux",
+      "brand_hits": 3,
+      "brand": "correct",
+      "category_hits": 1,
+      "category_result": "incorrect",
+      "outcomes": {
+        "straight": "asserted_alias",
+        "tilt": "asserted_alias",
+        "occluded": "asserted_alias"
+      },
+      "pending": false
+    },
+    {
+      "product_id": "soap_local",
+      "category": "soap",
+      "origin": "local",
+      "comparison_role": "primary",
+      "brand_true": "Capri",
+      "brand_hits": 3,
+      "brand": "correct",
+      "category_hits": 0,
+      "category_result": "incorrect",
+      "outcomes": {
+        "straight": "asserted_alias",
+        "tilt": "asserted_alias",
+        "occluded": "asserted_alias"
+      },
+      "pending": false
+    }
+  ],
+  "primary_brand_outcomes": {
+    "asserted_alias": 42,
+    "punctuation_blocked_assertion": 6,
+    "abstention": 6
+  },
+  "abstentions_primary": 6,
+  "pending_adjudication_images": 6,
+  "exploratory_brand": {
+    "apple_fruita": "correct",
+    "apple_fruitien": "correct"
+  },
+  "exploratory_category": {
+    "apple_fruita": "correct",
+    "apple_fruitien": "correct"
+  },
+  "latin_cer_mean": 5.220102264288675,
+  "latin_cer_median": 0.6920045045045045,
+  "latin_cer_n": 60,
+  "latin_wer_mean": 3.9808267195767195,
+  "latin_wer_median": 0.7142857142857143,
+  "latin_cer_mean_without_repeated_line": 1.5628158619884835,
+  "latin_cer_n_without_repeated_line": 59,
+  "urdu_cer_mean": 4.907594463150019,
+  "urdu_cer_median": 2.1363636363636362,
+  "urdu_cer_n": 9,
+  "urdu_omitted_when_present": 3,
+  "degenerate_images": [
+    "noodles_intl/tilt"
+  ],
+  "origin_brand_products": {
+    "international": "9/9 (100%)",
+    "local": "4/9 (44%)"
+  },
+  "exploratory_image_count": 6
+}

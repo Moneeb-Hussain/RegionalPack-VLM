@@ -1,0 +1,133 @@
+# Product-brand strings for Prompt 1. A parent name alone is not an alias.
+# parent_names are metadata. Scoring does not read them.
+# Matching ignores case. It keeps the words in order and does not match a shorter word inside a longer one.
+
+products:
+  cola_intl:
+    brand: Coca-Cola
+    aliases:
+      - Coca-Cola
+      - Coca Cola
+      - Coke
+  cola_local:
+    brand: Cola Next
+    parent_names:
+      - Mezan
+    aliases:
+      - Cola Next
+      - Next Cola
+  biscuit_intl:
+    brand: Oreo
+    parent_names:
+      - Mondelēz
+      - Mondelez
+    aliases:
+      - Oreo
+  biscuit_local:
+    brand: Rite
+    parent_names:
+      - Bisconni
+    aliases:
+      - Rite
+  tea_intl:
+    brand: Lipton
+    aliases:
+      - Lipton
+      - Lipton Yellow Label
+  tea_local:
+    brand: Tapal
+    aliases:
+      - Tapal
+      - Tapal Danedar
+  chocolate_intl:
+    brand: Cadbury
+    parent_names:
+      - Mondelēz
+      - Mondelez
+    aliases:
+      - Cadbury
+      - Cadbury Dairy Milk
+      - Dairy Milk
+  chocolate_local:
+    brand: YOU
+    parent_names:
+      - CandyLand
+      - Candyland
+    aliases:
+      - YOU
+      - CandyLand YOU
+  chips_intl:
+    brand: Lay's
+    aliases:
+      - Lay's
+      - Lays
+  chips_local:
+    brand: Super Crisp
+    parent_names:
+      - Tripple-EM
+    aliases:
+      - Super Crisp
+      - SuperCrisp
+  detergent_intl:
+    brand: Surf Excel
+    aliases:
+      - Surf Excel
+      - Surf
+  detergent_local:
+    brand: Bonus
+    aliases:
+      - Bonus
+      - Bonus Tristar
+  toothpaste_intl:
+    brand: Colgate
+    aliases:
+      - Colgate
+  toothpaste_local:
+    brand: Medicam
+    aliases:
+      - Medicam
+  apple_fruita:
+    brand: Fruita Vitals
+    parent_names:
+      - Nestlé
+      - Nestle
+    aliases:
+      - Fruita Vitals
+      - Nestlé Fruita Vitals
+      - Nestle Fruita Vitals
+  apple_fruitien:
+    brand: Fruitien
+    parent_names:
+      - Citropak
+    aliases:
+      - Fruitien
+      - Fruitien Joy
+  noodles_intl:
+    brand: Knorr
+    parent_names:
+      - Unilever
+    aliases:
+      - Knorr
+      - Knorr Chicken
+  noodles_local:
+    brand: Shoop
+    parent_names:
+      - Shan
+      - Shan Foods
+    aliases:
+      - Shoop
+      - Shoop Chattpata
+      - Shoop Chatpatta
+      - Shan Shoop
+      - Shan Shoop Chattpata
+      - Shan Shoop Chatpatta
+  soap_intl:
+    brand: Lux
+    aliases:
+      - Lux
+  soap_local:
+    brand: Capri
+    parent_names:
+      - ZIL
+    aliases:
+      - Capri

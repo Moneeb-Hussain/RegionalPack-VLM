@@ -1,0 +1,394 @@
+image_id,product_id,category,origin,comparison_role,angle,brand_true,identification_response,category_response,transcription_response,frozen_brand_match,explicit_abstention,alias_if_quotes_and_commas_ignored,brand_outcome,brand_headline_success,adjudication,frozen_category_match,latin_cer,latin_wer,urdu_cer,urdu_ground_truth_nonempty,urdu_in_response,latin_ref_chars,latin_hyp_chars,repeat_count,repeat_phrase,flags
+cola_intl/straight,cola_intl,cola,international,primary,straight,Coca-Cola,The product shown in the image is Coca-Cola.,beverage,"Coca-Cola
+ORIGINAL TASTE",True,False,True,asserted_alias,True,none,True,0.0,0.0,,False,False,24,24,1,Coca-Cola,
+cola_intl/tilt,cola_intl,cola,international,primary,tilt,Coca-Cola,The product shown in the image is Coca-Cola.,beverage,"Coca-Cola
+ORIGINAL TASTE",True,False,True,asserted_alias,True,none,True,0.0,0.0,,False,False,24,24,1,Coca-Cola,
+cola_intl/occluded,cola_intl,cola,international,primary,occluded,Coca-Cola,The product shown in the image is Coca-Cola.,beverage,"Coca-Cola
+ORIGINAL TASTE",True,False,True,asserted_alias,True,none,True,0.0,0.0,,False,False,24,24,1,Coca-Cola,
+cola_local/straight,cola_local,cola,local,primary,straight,Cola Next,The product shown in the image is Cola Next.,beverage,Cola NEXT,True,False,True,asserted_alias,True,none,True,0.0,0.0,,False,False,9,9,1,Cola NEXT,
+cola_local/tilt,cola_local,cola,local,primary,tilt,Cola Next,"The product shown in the image is a bottle of Cola Next. The brand name ""Cola Next"" is clearly visible on the label.",beverage,"Cola
+NEXT",True,False,True,asserted_alias,True,none,True,0.0,0.0,,False,False,9,9,1,Cola,
+cola_local/occluded,cola_local,cola,local,primary,occluded,Cola Next,"The product shown in the image is a bottle of Cola Next. The brand name ""Next"" is clearly visible on the label.",beverage,Cola NEXT,True,False,True,asserted_alias,True,none,True,0.0,0.0,,False,False,9,9,1,Cola NEXT,
+biscuit_intl/straight,biscuit_intl,biscuit,international,primary,straight,Oreo,The product shown in the image is a chocolate-flavored Oreo cookie. The specific brand is Oreo.,This is a snack.,"OREO
+CHOCOLATE CREAM
+4x",True,False,True,asserted_alias,True,none,True,0.15,0.3333333333333333,,False,False,20,23,1,OREO,
+biscuit_intl/tilt,biscuit_intl,biscuit,international,primary,tilt,Oreo,The product shown in the image is an Oreo chocolate cream cookie. The specific brand is Oreo.,This is a snack.,"OREO
+CHOCOLATE CREAM
+4x",True,False,True,asserted_alias,True,none,True,0.15,0.3333333333333333,,False,False,20,23,1,OREO,
+biscuit_intl/occluded,biscuit_intl,biscuit,international,primary,occluded,Oreo,The product shown in the image is an Oreo chocolate cream cookie. The brand name is Oreo.,This is a snack.,"OREO
+CHOCOLATE CREAM
+4x",True,False,True,asserted_alias,True,none,True,0.15,0.3333333333333333,,False,False,20,23,1,OREO,
+biscuit_local/straight,biscuit_local,biscuit,local,primary,straight,Rite,"The product shown in the image is Bisconni Rite, which is a type of chocolate biscuit with vanilla cream. The specific brand name is Bisconni.",This is a snack.,"BISCONNI
+Rite
+RICH CHOCOLATE BISCUITS WITH
+VANILLA CREAM",False,False,True,punctuation_blocked_assertion,False,pending_human,True,0.0,0.0,,False,False,56,56,1,BISCONNI,alias_present_but_comma_or_quotes_block_frozen_match|parent_named_as_the_brand
+biscuit_local/tilt,biscuit_local,biscuit,local,primary,tilt,Rite,"The product shown in the image is a biscuit bar from the brand Biscotti, specifically the ""Rite"" flavor. The packaging indicates it is a ""Rich Chocolate Biscuits with Vanilla Cream"" and features an image of a chocolate biscuit with cream. The brand name is Biscotti, and the product name is Rite.",This is a snack.,"BISCONNI
+Rite
+RICH CHOCOLATE BISCUITS WITH VANILLA CREAM",True,False,True,asserted_alias,True,none,True,0.0,0.0,,False,False,56,56,1,BISCONNI,wrong_parent_spelling_biscotti
+biscuit_local/occluded,biscuit_local,biscuit,local,primary,occluded,Rite,"The product shown in the image is a biscuit bar from the brand Bisconni, specifically the ""Rite"" flavor. The packaging indicates it is ""Rich Chocolate Biscuits with Vanilla Cream.""",This is a snack.,"BISCONNI
+Rite
+RICH CHOCOLATE BISCUITS WITH
+VANILLA CREAM",False,False,True,punctuation_blocked_assertion,False,pending_human,True,0.0,0.0,,False,False,56,56,1,BISCONNI,alias_present_but_comma_or_quotes_block_frozen_match
+tea_intl/straight,tea_intl,tea,international,primary,straight,Lipton,The product shown in the image is Lipton Yellow Label tea.,beverage,"Lipton
+YELLOW LABEL
+THE WORLD'S No.1 TEA BRAND*",True,False,True,asserted_alias,True,none,True,0.021739130434782608,0.125,,False,False,46,47,1,Lipton,
+tea_intl/tilt,tea_intl,tea,international,primary,tilt,Lipton,The product shown in the image is a box of Lipton Yellow Label tea. The brand name is Lipton.,This is a beverage.,"Lipton
+YELLOW LABEL
+THE WORLD'S No.1 TEA BRAND*",True,False,True,asserted_alias,True,none,True,0.021739130434782608,0.125,,False,False,46,47,1,Lipton,
+tea_intl/occluded,tea_intl,tea,international,primary,occluded,Lipton,The product shown in the image is Lipton Yellow Label tea.,This is a beverage.,"Lipton
+YELLOW LABEL
+THE WORLD'S No.1 TEA BRAND*
+NEW & STRONGER BLEND*",True,False,True,asserted_alias,True,none,True,0.5,0.625,,False,False,46,69,1,Lipton,
+tea_local/straight,tea_local,tea,local,primary,straight,Tapal,The product shown in the image is Tapal Danedar tea.,This is a beverage.,"RICH, AROMATIC AND REFRESHING
+TEA.
+TAPALTEA
+TAPAL
+DANEDAR",True,False,True,asserted_alias,True,none,True,0.7708333333333334,0.7142857142857143,,False,False,48,57,1,"RICH, AROMATIC AND REFRESHING",
+tea_local/tilt,tea_local,tea,local,primary,tilt,Tapal,The product shown in the image is Tapal Danedar tea.,This is a beverage.,"RICH, AROMATIC AND REFRESHING TEA.
+TAPAL
+TAPAL
+DANEDAR",True,False,True,asserted_alias,True,none,True,0.7083333333333334,0.7142857142857143,,False,False,48,54,2,TAPAL,
+tea_local/occluded,tea_local,tea,local,primary,occluded,Tapal,The product shown in the image is Tapal Danedar tea.,This is a beverage.,"RICH, AROMATIC AND REFRESHING TEA.
+TAPALTEA
+TAPAL
+DANEDAR",True,False,True,asserted_alias,True,none,True,0.7708333333333334,0.7142857142857143,,False,False,48,57,1,"RICH, AROMATIC AND REFRESHING TEA.",
+chocolate_intl/straight,chocolate_intl,chocolate,international,primary,straight,Cadbury,The product shown in the image is a Cadbury Dairy Milk chocolate bar.,This is a snack.,"Cadbury
+DAIRY
+MILK
+THE CLASSIC
+CREAMY TASTE
+SUPPORTS
+SUSTAINABLY
+SOURCED
+COCOA
+COCOA
+LIFE
+1 serving
+= 6
+CALORIES
+141
+1 serving/100g = 27 g/100g",True,False,True,asserted_alias,True,none,True,2.3255813953488373,2.4285714285714284,,False,False,43,143,2,COCOA,
+chocolate_intl/tilt,chocolate_intl,chocolate,international,primary,tilt,Cadbury,The product shown in the image is a Cadbury Dairy Milk chocolate bar.,This is a snack.,"Cadbury
+DAIRY MILK
+THE CLASSIC
+CREAMY TASTE
+SUPPORTS
+SUSTAINABLY
+SOURCED
+COCOA
+COCOA
+LIFE
+1 serving = 0g
+CALORIES 141
+1 serving = 27g/oz",True,False,True,asserted_alias,True,none,True,2.1627906976744184,2.2857142857142856,,False,False,43,136,2,COCOA,
+chocolate_intl/occluded,chocolate_intl,chocolate,international,primary,occluded,Cadbury,The product shown in the image is a Cadbury Dairy Milk chocolate bar.,This is a snack.,"Cadbury
+DAIRY
+MILK
+THE CLASSIC
+CREAMY TASTE
+SUPPORTS
+SUSTAINABLY
+SOURCED
+COCOA
+COCOA
+LIFE",True,False,True,asserted_alias,True,none,True,1.069767441860465,0.8571428571428571,,False,False,43,89,2,COCOA,
+chocolate_local/straight,chocolate_local,chocolate,local,primary,straight,YOU,"The product shown in the image is a chocolate bar. The packaging features the text ""you MILK CHOCOLATE"" in a stylized font. However, the specific brand name cannot be identified with confidence from the image.","This is a chocolate bar, which falls under the category of dairy products.","you
+MILK
+CHOCOLATE",False,True,True,abstention,False,abstention_not_a_hit,True,0.0,0.0,,False,False,18,18,1,you,alias_quoted_inside_abstention|category_also_says_dairy
+chocolate_local/tilt,chocolate_local,chocolate,local,primary,tilt,YOU,The product shown in the image is a chocolate bar. The specific brand name is not identifiable from the image.,"This is a chocolate bar, which falls under the category of snack food.","you
+MILK
+CHOCOLATE",False,True,False,abstention,False,abstention_not_a_hit,True,0.0,0.0,,False,False,18,18,1,you,
+chocolate_local/occluded,chocolate_local,chocolate,local,primary,occluded,YOU,"The product shown in the image is a chocolate bar. The packaging features the text ""you MILK CHOCOLATE"" in gold lettering on a dark green background, with an image of two chocolate pieces on the right side. The brand name is not clearly visible, so I cannot identify the specific brand with confidence.","This is a chocolate bar, which falls under the category of dairy products.","you
+MILK
+CHOCOLATE",False,True,True,abstention,False,abstention_not_a_hit,True,0.0,0.0,,False,False,18,18,1,you,alias_quoted_inside_abstention|category_also_says_dairy
+chips_intl/straight,chips_intl,chips,international,primary,straight,Lay's,The product shown in the image is Lay's Classic potato chips.,This is a snack.,"Lay's
+CLASSIC
+MADE WITH
+REAL POTATOES
+RS. 50
+FLAVORED POTATOES",True,False,True,asserted_alias,True,none,True,0.6756756756756757,0.6666666666666666,,False,False,37,62,1,Lay's,
+chips_intl/tilt,chips_intl,chips,international,primary,tilt,Lay's,The product shown in the image is Lay's Classic potato chips.,This is a snack.,"Lay's
+CLASSIC
+MADE WITH
+REAL POTATOES
+RS-50
+FLAVORED POTATO CEREAL",True,False,True,asserted_alias,True,none,True,0.7837837837837838,0.6666666666666666,,False,False,37,66,1,Lay's,
+chips_intl/occluded,chips_intl,chips,international,primary,occluded,Lay's,The product shown in the image is Lay's Classic potato chips. The brand name is Lay's.,This is a snack.,"Lay's
+CLASSIC
+MADE WITH
+REAL POTATOES
+RS. 50",True,False,True,asserted_alias,True,none,True,0.1891891891891892,0.3333333333333333,,False,False,37,44,1,Lay's,
+chips_local/straight,chips_local,chips,local,primary,straight,Super Crisp,"The product shown in the image is a bag of ""Super Crisp"" flavored potato chips with a ""Bar.B.Q"" flavor. The specific brand name is not clearly identifiable from the image.",This is a snack.,"SUPER CRISP
+FLAVOURED POTATO CHIPS
+BAR.B.Q
+FLAVOUR
+PER 30 gm
+ENERGY
+153.2 kcal
+60
+S.60",False,True,True,abstention,False,abstention_not_a_hit,True,0.72,1.1428571428571428,,False,False,50,86,1,SUPER CRISP,alias_quoted_inside_abstention
+chips_local/tilt,chips_local,chips,local,primary,tilt,Super Crisp,The product shown in the image is a bag of potato chips. The specific brand name is not clearly visible in the image.,This is a snack.,"SUPER CRISP
+60
+BAR.B.Q
+FLAVOURED POTATO CHIPS
+PER 30 gm
+ENERGY
+153.2 kcal
+7.5g fat",False,True,False,abstention,False,abstention_not_a_hit,True,0.86,1.4285714285714286,,False,False,50,82,1,SUPER CRISP,
+chips_local/occluded,chips_local,chips,local,primary,occluded,Super Crisp,The product shown in the image is a bag of potato chips. The specific brand name is not clearly visible in the image.,This is a snack.,"SUPER CRISP
+FLAVOURED POTATO CHIPS
+BAR.B.Q
+PER 30 gm
+ENERGY
+153.2Kcal
+766%",False,True,False,abstention,False,abstention_not_a_hit,True,0.6,0.8571428571428571,,False,False,50,74,1,SUPER CRISP,
+detergent_intl/straight,detergent_intl,detergent,international,primary,straight,Surf Excel,"The product shown in the image is Surf Excel, a brand of laundry detergent.",Cleaning product,"Rs. 50
+Surf excel
+اسرف ابتكمل
+الكَرَمَ ضَرِي دَغ",True,False,True,asserted_alias,True,none,True,3.8,3.5,1.2962962962962963,True,True,10,48,1,Rs. 50,
+detergent_intl/tilt,detergent_intl,detergent,international,primary,tilt,Surf Excel,The product shown in the image is Surf Excel.,This is a cleaning product.,"Rs. 50
+Surf excel
+الدَّرَجَةِ مَدْرِي دَغ
+بِسْرَفِ اِبْسَل",True,False,True,asserted_alias,True,none,True,4.8,3.5,1.8148148148148149,True,True,10,58,1,Rs. 50,
+detergent_intl/occluded,detergent_intl,detergent,international,primary,occluded,Surf Excel,The product shown in the image is Surf Excel.,Cleaning product,"Rs. 50
+Surf excel
+إسبرف إيتسل
+الحُمَّرَةِ صَرَدِي دَع",True,False,True,asserted_alias,True,none,True,4.3,3.5,1.4814814814814814,True,True,10,53,1,Rs. 50,
+detergent_local/straight,detergent_local,detergent,local,primary,straight,Bonus,"The product shown in the image is a laundry detergent. The specific brand name is ""Bonus Tristar"".",cleaning product,"زيادة جهاك، زيادة صفاتي
+R5
+50
+NEW
+BONUS
+TRISTAR
+إلى شتاد خلائق",False,False,True,punctuation_blocked_assertion,False,pending_human,True,3.769230769230769,5.0,2.1363636363636362,True,True,13,62,1,زيادة جهاك، زيادة صفاتي,alias_present_but_comma_or_quotes_block_frozen_match
+detergent_local/tilt,detergent_local,detergent,local,primary,tilt,Bonus,"The product shown in the image is a packet of Bonus Tristar, a brand of sugar-free gum. The packaging indicates it is a ""NEW"" product with a ""50"" on the top left, which likely refers to the number of pieces in the pack. The text on the package is in Arabic, which suggests the product is likely from a country where Arabic is spoken. The brand name ""Bonus"" is prominently displayed in large white letters with a blue outline, and ""Tristar"" is written below it in red. The packaging also features a rainbow design and small illustrations of flowers. The product is likely a sugar-free gum",This is a cleaning product.,"50
+زيادة مهلك
+زيادة صافاتي!
+BONUS
+TRISTAR
+NEW",True,False,True,asserted_alias,True,none,True,2.4615384615384617,3.0,1.5,True,True,13,45,1,50,identification_calls_it_gum
+detergent_local/occluded,detergent_local,detergent,local,primary,occluded,Bonus,"The product shown in the image is a cleaning powder, specifically a brand called ""Bonus Tristar"". The packaging is in a yellow color with a red top and features the brand name ""Bonus Tristar"" in large white letters. The price is listed as Rs. 50, and the packaging also includes Arabic text.",Cleaning product,"زيادة جهاز، زيادة صنفائي!  
+Rs. 50  
+NEW  
+BONUS  
+TRISTAR  
+حل شلاد خطافة!",False,False,True,punctuation_blocked_assertion,False,pending_human,True,4.0,5.0,2.272727272727273,True,True,13,65,1,زيادة جهاز، زيادة صنفائي!,alias_present_but_comma_or_quotes_block_frozen_match
+toothpaste_intl/straight,toothpaste_intl,toothpaste,international,primary,straight,Colgate,The product shown in the image is Colgate Fresh Gel.,This is a cleaning product.,"Colgate® FRESH GEL
+✓ Strong Teeth ✓ Fresh Breath ✓ Cavity Protection
+Vegan
+Recyclable Tube®",True,False,True,asserted_alias,True,none,False,0.4918032786885246,0.7777777777777778,,False,False,61,91,1,Colgate® FRESH GEL,category_uses_prompt_example_cleaning_product
+toothpaste_intl/tilt,toothpaste_intl,toothpaste,international,primary,tilt,Colgate,The product shown in the image is Colgate Fresh Gel toothpaste.,This is a cleaning product.,"Colgate
+FRESH GEL
+✓ Strong Teeth ✓ Fresh Breath ✓ Cavity Protection
+Vegan
+Recyclable tube",True,False,True,asserted_alias,True,none,False,0.45901639344262296,0.6666666666666666,,False,False,61,89,1,Colgate,category_uses_prompt_example_cleaning_product
+toothpaste_intl/occluded,toothpaste_intl,toothpaste,international,primary,occluded,Colgate,The product shown in the image is Colgate Fresh Gel.,This is a cleaning product.,"Colgate® FRESH GEL
+✓ Strong Teeth ✓ Fresh Breath ✓ Cavity Protection
+Vegan
+Available 4",True,False,True,asserted_alias,True,none,False,0.4098360655737705,0.7777777777777778,,False,False,61,86,1,Colgate® FRESH GEL,category_uses_prompt_example_cleaning_product
+toothpaste_local/straight,toothpaste_local,toothpaste,local,primary,straight,Medicam,The product shown in the image is a toothpaste. The specific brand is MEDICAM.,This is a cleaning product.,"MEDICAM
+UltraFresh Gel X 3in1 Gel
+Red Gel
+with extra refreshing
+COOLING EFFECT
+BLASTING
+FRESHNESS
+Gel
+For Strong White Teeth
+ANTICAVITY
+EXTRA
+WHITENING
+REFRESHED
+COOLING
+75g",True,False,True,asserted_alias,True,none,False,1.36,1.25,,False,False,75,173,1,MEDICAM,category_uses_prompt_example_cleaning_product
+toothpaste_local/tilt,toothpaste_local,toothpaste,local,primary,tilt,Medicam,The product shown in the image is a toothpaste. The specific brand is MEDICAM.,This is a cleaning product.,"MEDICAM
+UltraFresh Gel X 3in1
+BLASTING FRESHNESS Gel
+For Strong White Teeth
+Red Gel
+with extra refreshing
+COOLING EFFECT
+ANTICAVITY
+EXTRA WHITENING
+REFRESHED COOLING
+75g",True,False,True,asserted_alias,True,none,False,1.4133333333333333,1.25,,False,False,75,169,1,MEDICAM,category_uses_prompt_example_cleaning_product
+toothpaste_local/occluded,toothpaste_local,toothpaste,local,primary,occluded,Medicam,The product shown in the image is a toothpaste. The specific brand is MEDICAM.,This is a cleaning product.,"MEDICAM
+UltraFresh Gel X 3in1 Gel
+BLASTING FRESHNESS Gel
+For Strong White Teeth
+Red Gel
+with extra refreshing
+COOLING EFFECT
+ANTICAVITY
+EXTRA WHITENING
+REFRESHED COOLING
+75g",True,False,True,asserted_alias,True,none,False,1.9666666666666666,1.8,,False,False,60,173,1,MEDICAM,category_uses_prompt_example_cleaning_product
+apple_fruita/straight,apple_fruita,apple,exploratory,exploratory,straight,Fruita Vitals,The product shown in the image is Nestlé Fruita Vitals Apple Nectar.,beverage,"Nestle
+FRUITA VITALS
+APPLE NECTAR
+WITH VITAMIN C
+REDUCED CALORIE
+1 pack =
+Energy
+94kcal
+5%
+Find out more
+% of guideline daily
+amount of an average
+adult (2000 kcal)",True,False,True,asserted_alias,True,none,True,4.0,5.2,,False,False,33,164,1,Nestle,
+apple_fruita/tilt,apple_fruita,apple,exploratory,exploratory,tilt,Fruita Vitals,The product shown in the image is Nestlé Fruita Vitals Apple Nectar.,beverage,"Nestle
+FRUITA VITALS
+APPLE NECTAR
+VITALITY & IMMUNITY
+REDUCED CAFFEINE",True,False,True,asserted_alias,True,none,True,1.1515151515151516,1.2,,False,False,33,70,1,Nestle,
+apple_fruita/occluded,apple_fruita,apple,exploratory,exploratory,occluded,Fruita Vitals,The product shown in the image is Nestlé Fruita Vitals Apple Nectar.,This is a beverage.,"Nestle
+FRUITA VITALS
+APPLE NECTAR
+WITH VITAMIN C
+VITALITY & IMMUNITY
+1 pack =
+Energy 94kcal
+5%
+Find out more
+20% of guideline daily
+amount of an average
+adult (2000 kcal)",True,False,True,asserted_alias,True,none,True,4.181818181818182,5.4,,False,False,33,170,1,Nestle,
+apple_fruitien/straight,apple_fruitien,apple,exploratory,exploratory,straight,Fruitien,The product shown in the image is a carton of Fruitien Joy Apple Fruit Drink. The brand name is Fruitien.,beverage,"Fruitien
+joy
+Apple
+Fruit Drink
+No Preservatives",True,False,True,asserted_alias,True,none,True,0.5666666666666667,0.4,,False,False,30,47,1,Fruitien,
+apple_fruitien/tilt,apple_fruitien,apple,exploratory,exploratory,tilt,Fruitien,The product shown in the image is a carton of Fruitien Joy Apple Fruit Drink. The brand name is Fruitien.,beverage,"Fruitien
+joy
+Apple
+Fruit Drink
+No Preservatives",True,False,True,asserted_alias,True,none,True,0.5666666666666667,0.4,,False,False,30,47,1,Fruitien,
+apple_fruitien/occluded,apple_fruitien,apple,exploratory,exploratory,occluded,Fruitien,The product shown in the image is a carton of Fruitien Joy Apple Fruit Drink. The brand name is Fruitien.,beverage,"Fruitien
+joy
+Apple
+Fruit Drink
+No Preservatives",True,False,True,asserted_alias,True,none,True,0.5666666666666667,0.4,,False,False,30,47,1,Fruitien,
+noodles_intl/straight,noodles_intl,noodles,international,primary,straight,Knorr,The product shown in the image is Knorr Chicken instant noodles.,"This is a snack, specifically a type of instant noodle.","Knorr
+SINCE 1838
+Chicken
+Rs. 50
+SERVING SUGGESTION",True,False,True,asserted_alias,True,none,True,9.0,7.0,,False,False,5,50,1,Knorr,
+noodles_intl/tilt,noodles_intl,noodles,international,primary,tilt,Knorr,The product shown in the image is Knorr Chicken instant noodles.,"This is a snack, specifically instant noodles.","Knorr
+SINCE 1838
+chicken
+RS-50
+INSTANT
+NO added preservatives
+NO added preservatives
+NO added preservatives
+NO added preservatives
+NO added preservatives
+NO added preservatives
+NO added preservatives
+NO added preservatives
+NO added preservatives
+NO added preservatives
+NO added preservatives
+NO added preservatives
+NO added preservatives
+NO added preservatives
+NO added preservatives
+NO added preservatives
+NO added preservatives
+NO added preservatives
+NO added preservatives
+NO added preservatives
+NO added preservatives
+NO added preservatives
+NO added preservatives
+NO added preservatives
+NO added preservatives
+NO added preservatives
+NO added preservatives
+NO added preservatives
+NO added preservatives
+NO added preservatives
+NO added preservatives
+NO added preservatives
+NO added preservatives
+NO added preservatives
+NO added preservatives
+NO added preservatives
+NO added preservatives
+NO added preservatives
+NO added preservatives
+NO added preservatives
+NO added preservatives
+NO added preservatives
+NO added preservatives
+NO added preservatives
+NO added preservatives
+NO added preservatives
+NO added pres",True,False,True,asserted_alias,True,none,True,221.0,146.0,,False,False,5,1110,46,NO added preservatives,repeated_transcription_line
+noodles_intl/occluded,noodles_intl,noodles,international,primary,occluded,Knorr,The product shown in the image is Knorr Chicken Ramen.,"This is a snack, specifically a type of instant noodle.","Knorr
+SINCE 1838
+Chicken
+Rs. 50
+NO added preservatives
+SERVING SUGGESTION",True,False,True,asserted_alias,True,none,True,13.6,10.0,,False,False,5,73,1,Knorr,
+noodles_local/straight,noodles_local,noodles,local,primary,straight,Shoop,"The product shown in the image is a packet of instant noodles. The specific brand name is ""Shoop"".","This is a snack, specifically instant noodles.","shoop
+RS 45
+CHATPATA
+Chattpata
+FLAVOUR
+INSTANT
+Noodles
+Best
+Suggestion
+awesome",False,False,True,punctuation_blocked_assertion,False,pending_human,True,4.2,4.5,12.833333333333334,True,False,15,78,1,shoop,alias_present_but_comma_or_quotes_block_frozen_match
+noodles_local/tilt,noodles_local,noodles,local,primary,tilt,Shoop,"The product shown in the image is a packet of instant noodles. The specific brand name is ""Shoop"".","This is a snack, specifically instant noodles.","shoop
+RS. 45
+Chattpata
+FLAVOUR
+Instant Noodles
+Shooop! Shooop! Shooop!",False,False,True,punctuation_blocked_assertion,False,pending_human,True,3.6666666666666665,4.0,11.5,True,False,15,70,1,shoop,alias_present_but_comma_or_quotes_block_frozen_match
+noodles_local/occluded,noodles_local,noodles,local,primary,occluded,Shoop,The product shown in the image is a packet of instant noodles. The specific brand name is Shoop.,"This is a snack, specifically instant noodles.","shoop
+RS. 45
+CHATPATA
+FLAVOUR
+Serving suggestion: NOODLES",True,False,True,asserted_alias,True,none,True,2.933333333333333,3.5,9.333333333333334,True,False,15,57,1,shoop,
+soap_intl/straight,soap_intl,soap,international,primary,straight,Lux,The product shown in the image is a bar of soap. The specific brand is LUX.,This is a cleaning product.,"LUX
+Vibrant Glow
+TANGERINE
+VITAMIN C+E",True,False,True,asserted_alias,True,none,False,0.0,0.0,,False,False,38,38,1,LUX,category_uses_prompt_example_cleaning_product
+soap_intl/tilt,soap_intl,soap,international,primary,tilt,Lux,The product shown in the image is a bar of soap. The specific brand is LUX.,This is a cleaning product.,"LUX
+Vibrant Glow
+TANGERINE
+VITAMIN C+E",True,False,True,asserted_alias,True,none,False,0.0,0.0,,False,False,38,38,1,LUX,category_uses_prompt_example_cleaning_product
+soap_intl/occluded,soap_intl,soap,international,primary,occluded,Lux,The product shown in the image is a bar of soap. The specific brand is Lux.,This is a soap.,"LUX
+Vibrant Glow
+TANGERINE
+VITAMIN C+E",True,False,True,asserted_alias,True,none,True,0.0,0.0,,False,False,38,38,1,LUX,
+soap_local/straight,soap_local,soap,local,primary,straight,Capri,The product shown in the image is a bar of soap. The specific brand is Capri.,This is a cleaning product.,"CAPRI
+—SOOTHING—
+GLOW
+• ALOE VERA
+• NATURAL JASMINE
+POWERED
+BY NATURE
+PROVEN TO SOOTHE
+NATURALLY PROVEN
+COSMETIC
+PROPERTIES",True,False,True,asserted_alias,True,none,False,1.7333333333333334,1.8571428571428572,,False,False,45,123,1,CAPRI,category_uses_prompt_example_cleaning_product
+soap_local/tilt,soap_local,soap,local,primary,tilt,Capri,The product shown in the image is Capri Soothing Glow soap. The brand name is Capri.,This is a cleaning product.,"CAPRI
+SOOTHING
+GLOW
+• ALOE VERA
+• NATURAL JASMINE
+POWERED BY NATURE
+PROVEN NATURAL
+PROTEIN TO SOOTHE SKIN
+COCCIDIC COSMETIC PROPERTIES",True,False,True,asserted_alias,True,none,False,1.9777777777777779,2.0,,False,False,45,134,1,CAPRI,category_uses_prompt_example_cleaning_product
+soap_local/occluded,soap_local,soap,local,primary,occluded,Capri,The product shown in the image is a bar of soap. The specific brand is Capri.,This is a cleaning product.,"CAPRI
+—SOOTHING—
+GLOW
+• ALOE VERA
+• NATURAL JASMINE
+POWERED BY NATURE
+PROVEN TO SOOTH THE SKIN
+SCIENTIFICALLY PROVEN NATURAL COSMETIC PROPERTIES",True,False,True,asserted_alias,True,none,False,2.2,2.2857142857142856,,False,False,45,144,1,CAPRI,category_uses_prompt_example_cleaning_product
