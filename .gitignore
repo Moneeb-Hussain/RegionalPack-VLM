@@ -46,3 +46,13 @@ dist/
 
 # OS
 .DS_Store
+
+# Generated copies and local working notes
+RegionalPack-VLM-60-Renamed-Photos/
+release/v0.1/publication/
+release/v0.1/hf_dataset/
+DATASET_COLLECTION_WORKFLOW.md
+RegionalPack-Benchmark-Raw-Audit.md
+docs/FINAL_PRE_RUN_CHECK.md
+docs/PRE_EVALUATION_QA.md
+reports/unresolved_annotations.csv
