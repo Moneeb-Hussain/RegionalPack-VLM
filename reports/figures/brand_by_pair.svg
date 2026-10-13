@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="320" viewBox="0 0 760 320">
+<rect width="100%" height="100%" fill="#f7f5f2"/>
+<text x="48" y="22" font-family="Georgia, serif" font-size="16">Primary product-level brand success by pair (1 = majority of 3 photos)</text>
+<line x1="48" y1="256.0" x2="744" y2="256.0" stroke="#ddd"/>
+<text x="40" y="260.0" text-anchor="end" font-size="11" font-family="sans-serif">0</text>
+<line x1="48" y1="36.0" x2="744" y2="36.0" stroke="#ddd"/>
+<text x="40" y="40.0" text-anchor="end" font-size="11" font-family="sans-serif">1</text>
+<rect x="54.0" y="36.0" width="21.8" height="220.0" fill="#3d5a40"/>
+<rect x="79.8" y="36.0" width="21.8" height="220.0" fill="#8a5a44"/>
+<text x="86.7" y="284" text-anchor="middle" font-size="11" font-family="sans-serif">cola</text>
+<rect x="131.3" y="36.0" width="21.8" height="220.0" fill="#3d5a40"/>
+<rect x="157.1" y="256.0" width="21.8" height="0.0" fill="#8a5a44"/>
+<text x="164.0" y="284" text-anchor="middle" font-size="11" font-family="sans-serif">biscuit</text>
+<rect x="208.7" y="36.0" width="21.8" height="220.0" fill="#3d5a40"/>
+<rect x="234.4" y="36.0" width="21.8" height="220.0" fill="#8a5a44"/>
+<text x="241.3" y="284" text-anchor="middle" font-size="11" font-family="sans-serif">tea</text>
+<rect x="286.0" y="36.0" width="21.8" height="220.0" fill="#3d5a40"/>
+<rect x="311.8" y="256.0" width="21.8" height="0.0" fill="#8a5a44"/>
+<text x="318.7" y="284" text-anchor="middle" font-size="11" font-family="sans-serif">chocolate</text>
+<rect x="363.3" y="36.0" width="21.8" height="220.0" fill="#3d5a40"/>
+<rect x="389.1" y="256.0" width="21.8" height="0.0" fill="#8a5a44"/>
+<text x="396.0" y="284" text-anchor="middle" font-size="11" font-family="sans-serif">chips</text>
+<rect x="440.7" y="36.0" width="21.8" height="220.0" fill="#3d5a40"/>
+<rect x="466.4" y="256.0" width="21.8" height="0.0" fill="#8a5a44"/>
+<text x="473.3" y="284" text-anchor="middle" font-size="11" font-family="sans-serif">detergent</text>
+<rect x="518.0" y="36.0" width="21.8" height="220.0" fill="#3d5a40"/>
+<rect x="543.8" y="36.0" width="21.8" height="220.0" fill="#8a5a44"/>
+<text x="550.7" y="284" text-anchor="middle" font-size="11" font-family="sans-serif">toothpaste</text>
+<rect x="595.3" y="36.0" width="21.8" height="220.0" fill="#3d5a40"/>
+<rect x="621.1" y="256.0" width="21.8" height="0.0" fill="#8a5a44"/>
+<text x="628.0" y="284" text-anchor="middle" font-size="11" font-family="sans-serif">noodles</text>
+<rect x="672.7" y="36.0" width="21.8" height="220.0" fill="#3d5a40"/>
+<rect x="698.4" y="36.0" width="21.8" height="220.0" fill="#8a5a44"/>
+<text x="705.3" y="284" text-anchor="middle" font-size="11" font-family="sans-serif">soap</text>
+<rect x="48" y="302" width="12" height="12" fill="#3d5a40"/>
+<text x="64" y="312" font-size="11" font-family="sans-serif">International</text>
+<rect x="228" y="302" width="12" height="12" fill="#8a5a44"/>
+<text x="244" y="312" font-size="11" font-family="sans-serif">Pakistan-market</text>
+</svg>

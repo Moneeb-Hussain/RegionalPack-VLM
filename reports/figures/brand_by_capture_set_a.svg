@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="380" viewBox="0 0 720 380">
+<rect width="100%" height="100%" fill="#fbfaf7"/>
+<text x="70" y="32" font-family="Georgia, serif" font-size="18">Set A brand successes by capture condition</text>
+<text x="70" y="52" font-family="sans-serif" font-size="12" fill="#444">Frozen matcher. 18 primary photographs in each condition. Apple drinks excluded.</text>
+<line x1="70" y1="290.0" x2="630" y2="290.0" stroke="#e4e0d8"/>
+<text x="62" y="294.0" text-anchor="end" font-size="11" font-family="sans-serif">0</text>
+<line x1="70" y1="216.7" x2="630" y2="216.7" stroke="#e4e0d8"/>
+<text x="62" y="220.7" text-anchor="end" font-size="11" font-family="sans-serif">6</text>
+<line x1="70" y1="143.3" x2="630" y2="143.3" stroke="#e4e0d8"/>
+<text x="62" y="147.3" text-anchor="end" font-size="11" font-family="sans-serif">12</text>
+<line x1="70" y1="70.0" x2="630" y2="70.0" stroke="#e4e0d8"/>
+<text x="62" y="74.0" text-anchor="end" font-size="11" font-family="sans-serif">18</text>
+<text x="22" y="180" font-size="12" font-family="sans-serif" transform="rotate(-90 22 180)">Photographs correct (of 18)</text>
+<rect x="127.3" y="131.1" width="72" height="158.9" fill="#1f4e79"/>
+<text x="163.3" y="125.1" text-anchor="middle" font-size="12" font-family="sans-serif">13/18</text>
+<text x="163.3" y="318" text-anchor="middle" font-size="13" font-family="sans-serif">straight</text>
+<rect x="314.0" y="106.7" width="72" height="183.3" fill="#1f4e79"/>
+<text x="350.0" y="100.7" text-anchor="middle" font-size="12" font-family="sans-serif">15/18</text>
+<text x="350.0" y="318" text-anchor="middle" font-size="13" font-family="sans-serif">tilt</text>
+<rect x="500.7" y="118.9" width="72" height="171.1" fill="#1f4e79"/>
+<text x="536.7" y="112.9" text-anchor="middle" font-size="12" font-family="sans-serif">14/18</text>
+<text x="536.7" y="318" text-anchor="middle" font-size="13" font-family="sans-serif">occluded</text>
+</svg>
