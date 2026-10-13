@@ -1,0 +1,7 @@
+tested_product,filename,on_manifest,manifest_product_id,used_to_choose_manifest,overlap_note
+Lipton Yellow Label,latin_01.jpg,yes,tea_intl,no,Filename from RegionalPack-Phase0-Labeled-Photos. The package face reads Lipton Yellow Label. No camera filename in the file metadata. The Phase 0 response was not used to assign this file or to keep the row.
+National Garam Masala,urdu_01.jpg,no,,no,Filename from RegionalPack-Phase0-Labeled-Photos. The package face reads National Garam Masala. Spice blend. Not added because it had been tested.
+Dairy Omung Milk,urdu_02.jpg,no,,no,Filename from RegionalPack-Phase0-Labeled-Photos. The package face reads Dairy Omung Low Fat Milk 220 ml. The milk category was replaced before collection. This product was not added.
+Shan Chicken Tikka,urdu_03.jpg,no,,no,Filename from RegionalPack-Phase0-Labeled-Photos. The package face reads Shan Chicken Tikka. Not added because it had been tested.
+Peek Freans Marie,latin_02.jpg,no,,no,Filename from RegionalPack-Phase0-Labeled-Photos. The package face reads Peek Freans Marie. Different subtype from the Oreo and Rite pair.
+Shangrila Garlic Chilli Sauce,latin_03.jpg,no,,no,Filename from RegionalPack-Phase0-Labeled-Photos. The package face reads Shangrila Garlic Chilli Sauce. Not added because it had been tested.

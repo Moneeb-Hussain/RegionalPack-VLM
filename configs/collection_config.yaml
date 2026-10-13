@@ -1,0 +1,19 @@
+# Photograph and comparison rules for the collected set.
+# This file does not score a model and does not change the hypotheses.
+
+photography:
+  location_may_differ_by_category: true
+  pair_must_share:
+    - lighting
+    - background
+    - phone
+    - camera
+  angles:
+    - straight
+    - tilt
+    - occluded
+
+comparison:
+  primary_role: primary
+  exploratory_role: exploratory
+  exploratory_excluded_from_primary: true

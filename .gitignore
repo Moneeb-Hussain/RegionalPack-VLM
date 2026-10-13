@@ -34,7 +34,11 @@ models/
 # Local images, uploads, and built Colab bundles
 samples/
 data/raw/**
+!data/raw/
 !data/raw/.gitkeep
+!data/raw/*/
+!data/raw/*/.gitkeep
+data/validation_report.md
 results/uploads/*
 !results/uploads/.gitkeep
 dist/

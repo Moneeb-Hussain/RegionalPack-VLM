@@ -1,0 +1,31 @@
+{
+  "status": "annotations_incomplete",
+  "ok": false,
+  "errors": [],
+  "annotation_gap_count": 57,
+  "present_count": 60,
+  "expected_count": 60,
+  "products": 20,
+  "images": {
+    "photograph_count": 60,
+    "unique_sha256": 60,
+    "duplicate_hashes": [],
+    "unreadable": [],
+    "exif_non_upright": 18,
+    "phase0_files_in_raw": []
+  },
+  "review_status_counts": {
+    "blank": 3,
+    "needs_review": 57
+  },
+  "latin_case_counts": {
+    "not_reviewed": 60
+  },
+  "urdu_case_counts": {
+    "not_reviewed": 60
+  },
+  "urdu_nonempty": 0,
+  "verified_count": 0,
+  "completed_benchmark_predictions": 0,
+  "phase0_separated": true
+}

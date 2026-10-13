@@ -1,0 +1,228 @@
+image_path,product_id,category,variant,brand_true,brand_group,origin,script_present,text_true_latin,text_true_urdu,angle,occlusion_note,brand_visible,ambiguous_text,notes,review_status
+data/raw/cola_intl/straight.jpg,cola_intl,cola,original cola,Coca-Cola,international,international,latin,"Coca-Cola
+ORIGINAL TASTE",,straight,,yes,,,verified
+data/raw/cola_intl/tilt.jpg,cola_intl,cola,original cola,Coca-Cola,international,international,latin,"Coca-Cola
+ORIGINAL TASTE",,tilt,,yes,,,verified
+data/raw/cola_intl/occluded.jpg,cola_intl,cola,original cola,Coca-Cola,international,international,latin,"Coca-Cola
+ORIGINAL TASTE",,occluded,"Hand covers the lower bottle, not the label.",yes,,,verified
+data/raw/cola_local/straight.jpg,cola_local,cola,original cola,Cola Next,pakistan_origin,local,latin,"Cola
+NEXT",,straight,,yes,,,verified
+data/raw/cola_local/tilt.jpg,cola_local,cola,original cola,Cola Next,pakistan_origin,local,latin,"Cola
+NEXT",,tilt,,yes,,,verified
+data/raw/cola_local/occluded.jpg,cola_local,cola,original cola,Cola Next,pakistan_origin,local,latin,"Cola
+NEXT",,occluded,"Hand covers the lower bottle, not the label.",yes,,,verified
+data/raw/biscuit_intl/straight.jpg,biscuit_intl,biscuit,chocolate cream sandwich biscuits,Oreo,international,international,latin,"OREO
+CHOCOLATE CREAM",,straight,,yes,,,verified
+data/raw/biscuit_intl/tilt.jpg,biscuit_intl,biscuit,chocolate cream sandwich biscuits,Oreo,international,international,latin,"OREO
+CHOCOLATE CREAM",,tilt,,yes,,,verified
+data/raw/biscuit_intl/occluded.jpg,biscuit_intl,biscuit,chocolate cream sandwich biscuits,Oreo,international,international,latin,"OREO
+CHOCOLATE CREAM",,occluded,"Finger covers the left seal, not the brand or flavor line.",yes,,,verified
+data/raw/biscuit_local/straight.jpg,biscuit_local,biscuit,rich chocolate biscuits with vanilla cream,Rite,pakistan_origin,local,latin,"BISCONNI
+Rite
+RICH CHOCOLATE BISCUITS WITH
+VANILLA CREAM",,straight,,yes,,,verified
+data/raw/biscuit_local/tilt.jpg,biscuit_local,biscuit,rich chocolate biscuits with vanilla cream,Rite,pakistan_origin,local,latin,"BISCONNI
+Rite
+RICH CHOCOLATE BISCUITS WITH
+VANILLA CREAM",,tilt,,yes,,,verified
+data/raw/biscuit_local/occluded.jpg,biscuit_local,biscuit,rich chocolate biscuits with vanilla cream,Rite,pakistan_origin,local,latin,"BISCONNI
+Rite
+RICH CHOCOLATE BISCUITS WITH
+VANILLA CREAM",,occluded,"Finger covers the left seal, not the brand or flavor line.",yes,,,verified
+data/raw/tea_intl/straight.jpg,tea_intl,tea,loose black tea,Lipton,international,international,latin,"Lipton
+YELLOW LABEL
+THE WORLD'S No.1 TEA BRAND",,straight,,yes,,,verified
+data/raw/tea_intl/tilt.jpg,tea_intl,tea,loose black tea,Lipton,international,international,latin,"Lipton
+YELLOW LABEL
+THE WORLD'S No.1 TEA BRAND",,tilt,,yes,,,verified
+data/raw/tea_intl/occluded.jpg,tea_intl,tea,loose black tea,Lipton,international,international,latin,"Lipton
+YELLOW LABEL
+THE WORLD'S No.1 TEA BRAND",,occluded,"Thumb covers the lower-left corner and part of the cup picture, not the wordmark.",yes,,,verified
+data/raw/tea_local/straight.jpg,tea_local,tea,loose black tea,Tapal,pakistan_origin,local,latin,"TAPAL
+DANEDAR
+RICH, AROMATIC
+AND REFRESHING
+TEA.",,straight,,yes,,,verified
+data/raw/tea_local/tilt.jpg,tea_local,tea,loose black tea,Tapal,pakistan_origin,local,latin,"TAPAL
+DANEDAR
+RICH, AROMATIC
+AND REFRESHING
+TEA.",,tilt,,yes,,,verified
+data/raw/tea_local/occluded.jpg,tea_local,tea,loose black tea,Tapal,pakistan_origin,local,latin,"TAPAL
+DANEDAR
+RICH, AROMATIC
+AND REFRESHING
+TEA.",,occluded,"Fingers cover the lower-left corner, not the brand or flavor name.",yes,,,verified
+data/raw/chocolate_intl/straight.jpg,chocolate_intl,chocolate,plain milk chocolate,Cadbury,international,international,latin,"Cadbury
+DAIRY MILK
+THE CLASSIC
+CREAMY TASTE",,straight,,yes,,,verified
+data/raw/chocolate_intl/tilt.jpg,chocolate_intl,chocolate,plain milk chocolate,Cadbury,international,international,latin,"Cadbury
+DAIRY MILK
+THE CLASSIC
+CREAMY TASTE",,tilt,,yes,,,verified
+data/raw/chocolate_intl/occluded.jpg,chocolate_intl,chocolate,plain milk chocolate,Cadbury,international,international,latin,"Cadbury
+DAIRY MILK
+THE CLASSIC
+CREAMY TASTE",,occluded,"Finger covers the lower-left corner, not the brand or tagline.",yes,,,verified
+data/raw/chocolate_local/straight.jpg,chocolate_local,chocolate,milk chocolate bar,YOU,pakistan_origin,local,latin,"you
+MILK
+CHOCOLATE",,straight,,yes,,,verified
+data/raw/chocolate_local/tilt.jpg,chocolate_local,chocolate,milk chocolate bar,YOU,pakistan_origin,local,latin,"you
+MILK
+CHOCOLATE",,tilt,,yes,,,verified
+data/raw/chocolate_local/occluded.jpg,chocolate_local,chocolate,milk chocolate bar,YOU,pakistan_origin,local,latin,"you
+MILK
+CHOCOLATE",,occluded,"Finger covers the left seal, not the wordmark.",yes,,,verified
+data/raw/chips_intl/straight.jpg,chips_intl,chips,Classic potato crisps,Lay's,international,international,latin,"Lay's
+CLASSIC
+MADE WITH
+REAL POTATOES",,straight,,yes,,,verified
+data/raw/chips_intl/tilt.jpg,chips_intl,chips,Classic potato crisps,Lay's,international,international,latin,"Lay's
+CLASSIC
+MADE WITH
+REAL POTATOES",,tilt,,yes,,,verified
+data/raw/chips_intl/occluded.jpg,chips_intl,chips,Classic potato crisps,Lay's,international,international,latin,"Lay's
+CLASSIC
+MADE WITH
+REAL POTATOES",,occluded,"Finger covers the lower-left corner, not the brand or CLASSIC.",yes,,,verified
+data/raw/chips_local/straight.jpg,chips_local,chips,BAR.B.Q flavoured potato chips,Super Crisp,pakistan_origin,local,latin,"SUPER
+CRISP
+FLAVOURED
+POTATO
+CHIPS
+BAR.B.Q
+FLAVOUR",,straight,,yes,,,verified
+data/raw/chips_local/tilt.jpg,chips_local,chips,BAR.B.Q flavoured potato chips,Super Crisp,pakistan_origin,local,latin,"SUPER
+CRISP
+FLAVOURED
+POTATO
+CHIPS
+BAR.B.Q
+FLAVOUR",,tilt,,yes,,,verified
+data/raw/chips_local/occluded.jpg,chips_local,chips,BAR.B.Q flavoured potato chips,Super Crisp,pakistan_origin,local,latin,"SUPER
+CRISP
+FLAVOURED
+POTATO
+CHIPS
+BAR.B.Q
+FLAVOUR",,occluded,Fingers cover the lower-left corner. The flavor line still looks readable.,yes,,,verified
+data/raw/detergent_intl/straight.jpg,detergent_intl,detergent,standard powder,Surf Excel,international,international,mixed,"Surf
+excel","سرف ایکسل
+کالے گہرے ضدی داغ",straight,,yes,,,verified
+data/raw/detergent_intl/tilt.jpg,detergent_intl,detergent,standard powder,Surf Excel,international,international,mixed,"Surf
+excel","سرف ایکسل
+کالے گہرے ضدی داغ",tilt,,yes,,,verified
+data/raw/detergent_intl/occluded.jpg,detergent_intl,detergent,standard powder,Surf Excel,international,international,mixed,"Surf
+excel","سرف ایکسل
+کالے گہرے ضدی داغ",occluded,"Finger covers the left edge, not the wordmark.",yes,,,verified
+data/raw/detergent_local/straight.jpg,detergent_local,detergent,detergent powder,Bonus,pakistan_origin,local,mixed,"BONUS
+TRISTAR","زیادہ جھاگ
+زیادہ صفائی",straight,,yes,,,verified
+data/raw/detergent_local/tilt.jpg,detergent_local,detergent,detergent powder,Bonus,pakistan_origin,local,mixed,"BONUS
+TRISTAR","زیادہ جھاگ
+زیادہ صفائی",tilt,,yes,,,verified
+data/raw/detergent_local/occluded.jpg,detergent_local,detergent,detergent powder,Bonus,pakistan_origin,local,mixed,"BONUS
+TRISTAR","زیادہ جھاگ
+زیادہ صفائی",occluded,"Fingers cover the lower-left corner, not the wordmark.",yes,,,verified
+data/raw/toothpaste_intl/straight.jpg,toothpaste_intl,toothpaste,Fresh Gel toothpaste,Colgate,international,international,latin,"Colgate
+FRESH
+GEL
+Strong Teeth
+Fresh Breath
+Cavity Protection",,straight,,yes,,,verified
+data/raw/toothpaste_intl/tilt.jpg,toothpaste_intl,toothpaste,Fresh Gel toothpaste,Colgate,international,international,latin,"Colgate
+FRESH
+GEL
+Strong Teeth
+Fresh Breath
+Cavity Protection",,tilt,,yes,,,verified
+data/raw/toothpaste_intl/occluded.jpg,toothpaste_intl,toothpaste,Fresh Gel toothpaste,Colgate,international,international,latin,"Colgate
+FRESH
+GEL
+Strong Teeth
+Fresh Breath
+Cavity Protection",,occluded,"Thumb covers the lower-left green corner, not the brand or FRESH GEL.",yes,,,verified
+data/raw/toothpaste_local/straight.jpg,toothpaste_local,toothpaste,UltraFresh Gel 3-in-1 red gel,Medicam,pakistan_origin,local,latin,"MEDICAM
+UltraFresh Gel X
+3in1
+Gel
+Red Gel
+BLASTING FRESHNESS
+COOLING EFFECT",,straight,,yes,,,verified
+data/raw/toothpaste_local/tilt.jpg,toothpaste_local,toothpaste,UltraFresh Gel 3-in-1 red gel,Medicam,pakistan_origin,local,latin,"MEDICAM
+UltraFresh Gel X
+3in1
+Gel
+Red Gel
+BLASTING FRESHNESS
+COOLING EFFECT",,tilt,,yes,,,verified
+data/raw/toothpaste_local/occluded.jpg,toothpaste_local,toothpaste,UltraFresh Gel 3-in-1 red gel,Medicam,pakistan_origin,local,latin,"MEDICAM
+UltraFresh Gel X
+3in1
+Gel
+Red Gel
+BLASTING FRESHNESS",,occluded,"Thumb partially covers the lower-left text ""with extra refreshing COOLING EFFECT"".",yes,,,verified
+data/raw/apple_fruita/straight.jpg,apple_fruita,apple,apple nectar,Fruita Vitals,exploratory,exploratory,latin,"Nestlé
+FRUITA
+VITALS
+APPLE
+NECTAR",,straight,,yes,,,verified
+data/raw/apple_fruita/tilt.jpg,apple_fruita,apple,apple nectar,Fruita Vitals,exploratory,exploratory,latin,"Nestlé
+FRUITA
+VITALS
+APPLE
+NECTAR",,tilt,,yes,,,verified
+data/raw/apple_fruita/occluded.jpg,apple_fruita,apple,apple nectar,Fruita Vitals,exploratory,exploratory,latin,"Nestlé
+FRUITA
+VITALS
+APPLE
+NECTAR",,occluded,Thumb covers the lower-left corner.,yes,,,verified
+data/raw/apple_fruitien/straight.jpg,apple_fruitien,apple,Joy apple fruit drink,Fruitien,exploratory,exploratory,latin,"Fruitien
+joy
+Apple
+Fruit Drink",,straight,,yes,,,verified
+data/raw/apple_fruitien/tilt.jpg,apple_fruitien,apple,Joy apple fruit drink,Fruitien,exploratory,exploratory,latin,"Fruitien
+joy
+Apple
+Fruit Drink",,tilt,,yes,,,verified
+data/raw/apple_fruitien/occluded.jpg,apple_fruitien,apple,Joy apple fruit drink,Fruitien,exploratory,exploratory,latin,"Fruitien
+joy
+Apple
+Fruit Drink",,occluded,"Fingers cover the left edge, not the wordmark.",yes,,,verified
+data/raw/noodles_intl/straight.jpg,noodles_intl,noodles,chicken instant noodles,Knorr,international,international,latin,Knorr,,straight,,yes,"Flavor name partially cut off. Only ""hicken"" is visible; initial ""C"" is missing.",,verified
+data/raw/noodles_intl/tilt.jpg,noodles_intl,noodles,chicken instant noodles,Knorr,international,international,latin,Knorr,,tilt,,yes,"Flavor name partially cut off. Only ""hicken"" is visible; initial ""C"" is missing.",,verified
+data/raw/noodles_intl/occluded.jpg,noodles_intl,noodles,chicken instant noodles,Knorr,international,international,latin,Knorr,,occluded,"Finger covers the lower-left corner, not the visible flavor fragment.",yes,"Flavor name partially cut off. Only ""hicken"" is visible; initial ""C"" is missing.",,verified
+data/raw/noodles_local/straight.jpg,noodles_local,noodles,Chattpata instant noodles,Shoop,pakistan_origin,local,mixed,"shoop
+Chattpata",چٹ پٹا,straight,,yes,The word FLAVOUR is partially obscured by a fold in the packaging.,,verified
+data/raw/noodles_local/tilt.jpg,noodles_local,noodles,Chattpata instant noodles,Shoop,pakistan_origin,local,mixed,"shoop
+Chattpata",چٹ پٹا,tilt,,yes,The word FLAVOUR is partially obscured by a fold in the packaging.,,verified
+data/raw/noodles_local/occluded.jpg,noodles_local,noodles,Chattpata instant noodles,Shoop,pakistan_origin,local,mixed,"shoop
+Chattpata",چٹ پٹا,occluded,"Finger covers the lower-left character, not the wordmark.",yes,The word FLAVOUR is partially obscured by a fold in the packaging.,,verified
+data/raw/soap_intl/straight.jpg,soap_intl,soap,Vibrant Glow tangerine beauty-soap bar,Lux,international,international,latin,"LUX
+Vibrant Glow
+TANGERINE
+VITAMIN C+E",,straight,,yes,,,verified
+data/raw/soap_intl/tilt.jpg,soap_intl,soap,Vibrant Glow tangerine beauty-soap bar,Lux,international,international,latin,"LUX
+Vibrant Glow
+TANGERINE
+VITAMIN C+E",,tilt,,yes,,,verified
+data/raw/soap_intl/occluded.jpg,soap_intl,soap,Vibrant Glow tangerine beauty-soap bar,Lux,international,international,latin,"LUX
+Vibrant Glow
+TANGERINE
+VITAMIN C+E",,occluded,Thumb covers the lower-left corner. The printed lines still look readable.,yes,,,verified
+data/raw/soap_local/straight.jpg,soap_local,soap,Soothing Glow beauty-soap bar,Capri,pakistan_origin,local,latin,"CAPRI
+SOOTHING
+GLOW
+ALOE VERA
+NATURAL JASMINE",,straight,,yes,,,verified
+data/raw/soap_local/tilt.jpg,soap_local,soap,Soothing Glow beauty-soap bar,Capri,pakistan_origin,local,latin,"CAPRI
+SOOTHING
+GLOW
+ALOE VERA
+NATURAL JASMINE",,tilt,,yes,,,verified
+data/raw/soap_local/occluded.jpg,soap_local,soap,Soothing Glow beauty-soap bar,Capri,pakistan_origin,local,latin,"CAPRI
+SOOTHING
+GLOW
+ALOE VERA
+NATURAL JASMINE",,occluded,"Thumb covers the left flowers, not the wordmark.",yes,,,verified
