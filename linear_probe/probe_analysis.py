@@ -25,9 +25,28 @@ class _ReducedLR:
         self.coef_ = lr.coef_ @ V.T
         self.intercept_ = lr.intercept_
     def decision_function(self, Z):
-        return Z @ self.coef_.T + self.intercept_
+        scores = Z @ self.coef_.T + self.intercept_
+        # Two classes: sklearn keeps one row. The score is for classes_[1].
+        if len(self.classes_) == 2:
+            return np.asarray(scores).reshape(-1)
+        return scores
     def predict(self, Z):
-        return self.classes_[np.argmax(self.decision_function(Z), axis=1)]
+        scores = self.decision_function(Z)
+        if len(self.classes_) == 2:
+            # score > 0 is the second class. A zero score stays the first class.
+            return np.where(scores > 0, self.classes_[1], self.classes_[0])
+        return self.classes_[np.argmax(scores, axis=1)]
+
+def _require_multiclass(clf, caller):
+    """Geometry and class probabilities index one coefficient row per class.
+    A two-class probe does not have that layout."""
+    n = len(clf.classes_)
+    if n < 3:
+        raise ValueError(
+            f"{caller} needs one coefficient row per class. "
+            f"This probe has {n} classes; a two-class model stores a single score, "
+            "and score > 0 means the second class."
+        )
 
 def fit_probe(Xtr, ytr, C=1.0):
     sc = StandardScaler().fit(Xtr)
@@ -125,6 +144,7 @@ def calibrate_temperature(X, y, cond, train_conds, C=1.0, grid=None):
         rest = [k for k in train_conds if k != c]
         tr = np.isin(cond, rest); te = cond == c
         sc, clf = fit_probe(X[tr], y[tr], C)
+        _require_multiclass(clf, "calibrate_temperature")
         full = np.full((te.sum(), len(np.unique(y))), -30.0)
         full[:, clf.classes_] = clf.decision_function(sc.transform(X[te]))
         logits_all.append(full); y_all.append(y[te])
@@ -134,6 +154,7 @@ def calibrate_temperature(X, y, cond, train_conds, C=1.0, grid=None):
 
 def fisher_sensitivity(clf, z_std, d_std, T):
     """d^T F d / |d|^2, F = W^T (diag(p) - p p^T) W / T^2 for a softmax probe (a local, probe-defined Fisher form)."""
+    _require_multiclass(clf, "fisher_sensitivity")
     W = clf.coef_; p = _softmax((W @ z_std + clf.intercept_) / T)
     M = W.T @ ((np.diag(p) - np.outer(p, p)) @ W) / (T ** 2)
     return float(d_std @ M @ d_std / (d_std @ d_std + 1e-12))
@@ -148,6 +169,7 @@ def geometry_pairs(X, product, cond, model_correct, ref_cond=0, C=1.0, temps=(0.
         tr_conds = [k for k in np.unique(cond) if k != c]
         tr = np.isin(cond, tr_conds)
         sc, clf = fit_probe(X[tr], product[tr], C)
+        _require_multiclass(clf, "geometry_pairs")
         T_hat = calibrate_temperature(X, product, cond, tr_conds, C)
         for p_id in np.unique(product):
             i_ref = np.where((product == p_id) & (cond == ref_cond))[0]
