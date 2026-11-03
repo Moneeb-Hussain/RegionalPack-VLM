@@ -1,0 +1,2 @@
+site,role,acc,ci_lo,ci_hi,null_mean,p_overall,n_model_wrong,n_recovered,probe_acc_when_model_wrong,p_when_model_wrong,mcnemar_probe_only,mcnemar_model_only,mcnemar_p
+resnet18_pool,exploratory_control_added_after_primary,0.9666666666666667,0.9166666666666666,1.0,0.05186666666666666,0.000999000999000999,12,12,1.0,0.000999000999000999,12,2,0.012939453125

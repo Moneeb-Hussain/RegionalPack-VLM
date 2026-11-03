@@ -78,3 +78,6 @@ Only do this if the primary effect sizes are interesting enough to justify it.
 ## 9. Outputs
 results/decodability_by_site.csv, results/geometry_summary.json, results/geometry_<site>.csv,
 results/layerwise_decodability.png, and a 1-page README with the table of outcomes in section 6.
+
+## Addendum (4 Nov 2026, added AFTER primary results were seen)
+Exploratory control: ResNet-18 (ImageNet) features on the same 60 photos, same LOCO probe and permutation null (resnet_control.py). Added because vision_out and the colour/pixel controls showed the primary test was saturated. Not part of the pre-specified hypotheses.
