@@ -15,10 +15,28 @@ from scipy.stats import binomtest, spearmanr, rankdata
 RNG_SEED = 0
 
 # ---------------------------------------------------------------- probes
+class _ReducedLR:
+    """L2-regularised multinomial logistic regression fitted in the row space of the training data.
+    With more features than samples the optimum lies in the span of the training rows (the penalty only grows
+    for components outside it), so fitting on rank-r coordinates gives the same solution as the full fit.
+    coef_ is mapped back to the standardised feature space so callers see an ordinary fitted model."""
+    def __init__(self, lr, V):
+        self.classes_ = lr.classes_
+        self.coef_ = lr.coef_ @ V.T
+        self.intercept_ = lr.intercept_
+    def decision_function(self, Z):
+        return Z @ self.coef_.T + self.intercept_
+    def predict(self, Z):
+        return self.classes_[np.argmax(self.decision_function(Z), axis=1)]
+
 def fit_probe(Xtr, ytr, C=1.0):
     sc = StandardScaler().fit(Xtr)
-    clf = LogisticRegression(C=C, max_iter=5000).fit(sc.transform(Xtr), ytr)
-    return sc, clf
+    Z = sc.transform(Xtr)
+    _, S, Vt = np.linalg.svd(Z, full_matrices=False)
+    r = int((S > 1e-10 * S[0]).sum())
+    V = Vt[:r].T
+    lr = LogisticRegression(C=C, max_iter=5000).fit(Z @ V, ytr)
+    return sc, _ReducedLR(lr, V)
 
 def loco_predict(X, y, cond, C=1.0, y_train_override=None):
     """Leave-one-condition-out: train on the other conditions, predict the held-out one.
