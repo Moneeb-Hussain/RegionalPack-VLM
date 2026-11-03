@@ -136,3 +136,55 @@ def test_two_class_geometry_raises():
     X, y, cond = _toy(2, d=4, noise=0.1)
     with pytest.raises(ValueError, match="two-class"):
         pa.geometry_pairs(X, y, cond, np.ones(len(y), dtype=bool))
+
+
+def test_held_out_condition_never_enters_scaler_probe_or_temperature(monkeypatch):
+    """Each fit may use only the rows of the conditions it is allowed to train on.
+
+    The temperature is chosen by fits inside those training conditions.
+    The straight reference photo is allowed in that training set; the held-out
+    condition is not.
+    """
+    X, y, cond = _toy(4, n_cond=3, d=6, noise=0.2, seed=5)
+    X = np.column_stack([np.arange(len(y), dtype=float), X])
+    seen = []
+    real_fit = pa.fit_probe
+    real_scaler = pa.StandardScaler
+
+    class Capture(real_scaler):
+        def fit(self, data, y=None):
+            seen.append(("scaler", data[:, 0].astype(int).copy()))
+            return super().fit(data, y)
+
+    def spy(Xtr, ytr, C=1.0):
+        seen.append(("probe", Xtr[:, 0].astype(int).copy()))
+        return real_fit(Xtr, ytr, C)
+
+    monkeypatch.setattr(pa, "StandardScaler", Capture)
+    monkeypatch.setattr(pa, "fit_probe", spy)
+
+    def cond_sets(kind):
+        out = []
+        for name, rows in seen:
+            if name != kind:
+                continue
+            present = sorted({int(cond[i]) for i in rows})
+            expected = set(np.where(np.isin(cond, present))[0].tolist())
+            assert set(rows.tolist()) == expected
+            out.append(tuple(present))
+        return out
+
+    pa.loco_predict(X, y, cond)
+    assert cond_sets("probe") == [(1, 2), (0, 2), (0, 1)]
+    assert cond_sets("scaler") == cond_sets("probe")
+
+    seen.clear()
+    pa.geometry_pairs(X, y, cond, np.ones(len(y), dtype=bool))
+    # Held out tilt, then occluded. Temperature fits use one training condition at a time.
+    assert cond_sets("probe") == [(0, 2), (2,), (0,), (0, 1), (1,), (0,)]
+    assert cond_sets("scaler") == cond_sets("probe")
+    probe_rows = [rows for name, rows in seen if name == "probe"]
+    for rows in probe_rows[:3]:
+        assert not np.any(cond[rows] == 1)
+    for rows in probe_rows[3:]:
+        assert not np.any(cond[rows] == 2)
